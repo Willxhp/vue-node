@@ -11,6 +11,7 @@
 		//接收从App传递过来的addTodo
 		props:['addTodo'],
 		data() {
+			// console.log(this.$parent.addTodo == this.addTodo)
 			return {
 				//收集用户输入的title
 				title:''
