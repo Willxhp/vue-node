@@ -62,6 +62,7 @@
 
 			<!-- 绑定style样式--对象写法 -->
 			<div class="basic" :style="styleObj">{{name}}</div> <br/><br/>
+			<div class="basic" :style="{backgroundColor: color}">{{name}}</div> <br><br>
 			<!-- 绑定style样式--数组写法 -->
 			<div class="basic" :style="styleArr">{{name}}</div>
 		</div>
@@ -78,7 +79,7 @@
 				classArr:['atguigu1','atguigu2','atguigu3'],
 				classObj:{
 					atguigu1:false,
-					atguigu2:false,
+					atguigu2:true,
 				},
 				styleObj:{
 					// 带有连字符的原始css样式名要改成小驼峰命名法
@@ -88,6 +89,7 @@
 				styleObj2:{
 					backgroundColor:'orange'
 				},
+				color: 'blue',
 				// 数组中的元素必须是样式对象
 				styleArr:[
 					{
