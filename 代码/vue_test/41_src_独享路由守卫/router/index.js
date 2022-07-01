@@ -23,6 +23,7 @@ const router =  new VueRouter({
 			meta:{title:'主页'},
 			children:[
 				{
+					// 
 					name:'xinwen',
 					path:'news',
 					component:News,

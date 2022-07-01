@@ -22,7 +22,6 @@
 	h1{
 		background-color: orange;
 	}
-
 	.hello-enter-active{
 		animation: atguigu 0.5s linear;
 	}

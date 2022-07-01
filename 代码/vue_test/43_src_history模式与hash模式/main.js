@@ -12,6 +12,15 @@ Vue.config.productionTip = false
 //应用插件
 Vue.use(VueRouter)
 
+const originPush = VueRouter.prototype.push
+const originReplace = VueRouter.prototype.replace
+VueRouter.prototype.push = function(location) {
+	return originPush.call(this, location).catch(err => err)
+}
+VueRouter.prototype.replace = function(location) {
+	return originReplace.call(this, location).catch(err => err)
+}
+
 //创建vm
 new Vue({
 	el:'#app',

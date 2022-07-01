@@ -19,17 +19,18 @@
 		},
 		methods: {
 			searchUsers(){
+				if (this.keyWord.trim() === '') return
 				//请求前更新List的数据
 				this.$bus.$emit('updateListData',{isLoading:true,errMsg:'',users:[],isFirst:false})
 				axios.get(`https://api.github.com/search/users?q=${this.keyWord}`).then(
 					response => {
 						console.log('请求成功了')
 						//请求成功后更新List的数据
-						this.$bus.$emit('updateListData',{isLoading:false,errMsg:'',users:response.data.items})
+						this.$bus.$emit('updateListData',{isLoading:false,users:response.data.items})
 					},
 					error => {
 						//请求后更新List的数据
-						this.$bus.$emit('updateListData',{isLoading:false,errMsg:error.message,users:[]})
+						this.$bus.$emit('updateListData',{isLoading:false,errMsg:error.message})
 					}
 				)
 			}

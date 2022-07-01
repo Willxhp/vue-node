@@ -8,7 +8,7 @@
 <script>
 	export default {
 		name:'Detail',
-		props:['id','title'],
+		props:['id','title','a'],
 		computed: {
 			// id(){
 			// 	return this.$route.query.id

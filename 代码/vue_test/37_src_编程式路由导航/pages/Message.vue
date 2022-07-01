@@ -25,6 +25,7 @@
 </template>
 
 <script>
+//  
 	export default {
 		name:'Message',
 		data() {
@@ -38,6 +39,7 @@
 		},
 		methods: {
 			pushShow(m){
+				// 此处类似router-link标签中to属性的对象写法，当传递params参数时，必须写name属性，而不能写path属性，传递query参数则二者均可
 				this.$router.push({
 					name:'xiangqing',
 					query:{

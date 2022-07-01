@@ -71,7 +71,7 @@
 		},
 		mounted() {
 			const x = mapState({he:'sum',xuexiao:'school',xueke:'subject'})
-			console.log(x)
+			console.log(x) // {he: ƒ, xuexiao: ƒ, xueke: ƒ}
 		},
 	}
 </script>
