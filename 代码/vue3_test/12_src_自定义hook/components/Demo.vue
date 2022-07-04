@@ -14,7 +14,6 @@
 			//数据
 			let sum = ref(0)
 			let point = usePoint()
-			
 
 			//返回一个对象（常用）
 			return {sum,point}

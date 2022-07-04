@@ -15,9 +15,10 @@
 			let p = new Promise((resolve,reject)=>{
 				setTimeout(()=>{
 					resolve({sum})
-				},3000)
+				},1000)
 			})
 			return await p
+			// return new Promise(() => {})
 		}
 	}
 </script>

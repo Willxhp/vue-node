@@ -22,12 +22,12 @@
 
 			//方法
 			function changeInfo(){
-				// name.value = '李四'
-				// age.value = 48
+				name.value = '李四'
+				age.value = 48
 				console.log(job.value)
 				// job.value.type = 'UI设计师'
 				// job.value.salary = '60K'
-				// console.log(name,age)
+				console.log(name,age)
 			}
 
 			//返回一个对象（常用）

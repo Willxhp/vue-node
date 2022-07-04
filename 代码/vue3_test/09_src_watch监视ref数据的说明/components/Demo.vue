@@ -41,7 +41,6 @@
 				console.log('person的值变化了',newValue,oldValue)
 			},{deep:true})
 
-
 			//返回一个对象（常用）
 			return {
 				sum,

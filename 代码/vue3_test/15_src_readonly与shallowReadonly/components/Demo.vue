@@ -17,7 +17,8 @@
 		setup(){
 			//数据
 			let sum = ref(0)
-			let person = reactive({
+			// let person = reactive()
+			let person = {
 				name:'张三',
 				age:18,
 				job:{
@@ -25,11 +26,13 @@
 						salary:20
 					}
 				}
-			})
+			}
 
+			// readonly和shallowReadonly可以直接把一个普通对象转换成Proxy代理对象，不需要先对对象调用reactive
 			person = readonly(person)
 			// person = shallowReadonly(person)
-			// sum = readonly(sum)
+			sum = readonly(sum)
+			console.log(person)
 			// sum = shallowReadonly(sum)
 
 			//返回一个对象（常用）

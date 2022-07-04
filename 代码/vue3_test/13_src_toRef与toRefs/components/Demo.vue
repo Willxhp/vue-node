@@ -24,12 +24,13 @@
 				}
 			})
 
-			// const name1 = person.name
-			// console.log('%%%',name1)
+			// 通过直接赋值的方法得到的数值是非响应式的
+			const name1 = person.name
+			console.log('%%%',name1)
+			const name2 = toRef(person,'job')
+			console.log('####',name2)
 
-			// const name2 = toRef(person,'name')
-			// console.log('####',name2)
-
+			// 
 			const x = toRefs(person)
 			console.log('******',x)
 

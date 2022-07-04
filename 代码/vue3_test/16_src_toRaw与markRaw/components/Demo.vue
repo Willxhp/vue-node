@@ -41,7 +41,12 @@
 
 			function addCar(){
 				let car = {name:'奔驰',price:40}
+				// console.log(person)
+				// markRaw()方法使某个对象不会被转换成Proxy代理对象
 				person.car = markRaw(car)
+				// 若将某个对象添加到响应式对象中，会将该属性转换成Proxy代理对象
+				// person.car = car
+				console.log(person.car)
 			}
 
 			function changePrice(){

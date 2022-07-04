@@ -37,7 +37,7 @@
 			return {
 				x,
 				person,
-				...toRefs(person)
+				...toRefs(person),
 			}
 		}
 	}
